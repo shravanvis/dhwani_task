@@ -43,7 +43,7 @@ pieChartData:any = [
   getPieChartData(){
     this.httpClient.get('./assets/sales.json', {responseType: 'json'}).subscribe(
       data => {
-          this.pieChartData = data as any [];	 // FILL THE CHART ARRAY WITH DATA.
+          this.pieChartData = data as any [];
       },
       (err: HttpErrorResponse) => {
           console.log (err.message);
