@@ -1,0 +1,30 @@
+<div class="container">
+    <div style="float: right;">
+        <button class="btn btn-primary" routerLink="/page2">go to page2</button>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone Number</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let data of allUSer">
+            <tr>
+                <th scope="row">{{data.id}}</th>
+                <td>{{data.name}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data.phone}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">by shravan kumar vishwakarma</p>
+      </footer>
+</div>

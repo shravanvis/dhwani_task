@@ -1,0 +1,14 @@
+<div class="container">
+    <div style="float: right;">
+        <button class="btn btn-primary" routerLink="/page1">go to page1</button>
+    </div>
+    <canvas
+      baseChart
+      [chartType]="'pie'"
+      [datasets]="pieChartData"
+      [labels]="pieChartLabels"
+      [options]="pieChartOptions"
+      [legend]="true"
+      [colors]="pieChartColor">
+  </canvas>
+</div>
